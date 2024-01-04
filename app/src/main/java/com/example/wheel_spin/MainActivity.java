@@ -71,11 +71,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void rotateWheel() {
-        float fromDegrees = 0f;
-        float toDegrees = 300f * 4; // Rotating 4 times (can be adjusted)
+        float minDegrees =50;
+        float maxDegrees = 359;
+        float randomAngle = minDegrees + (float) (Math.random() * ((maxDegrees - minDegrees) + 1));
 
         Animation rotateAnimation = new RotateAnimation(
-                fromDegrees, toDegrees,
+                0, randomAngle,
                 Animation.RELATIVE_TO_SELF, 0.5f,
                 Animation.RELATIVE_TO_SELF, 0.5f
         );
