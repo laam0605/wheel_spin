@@ -72,7 +72,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void rotateWheel() {
         float fromDegrees = 0f;
-        float toDegrees = 360f * 4; // Rotating 4 times (can be adjusted)
+        float toDegrees = 300f * 4; // Rotating 4 times (can be adjusted)
 
         Animation rotateAnimation = new RotateAnimation(
                 fromDegrees, toDegrees,
