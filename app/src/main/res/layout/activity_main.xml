@@ -26,6 +26,13 @@
         android:layout_below="@id/addButton"
         android:layout_marginTop="31dp"
         android:layout_centerHorizontal="true"/>
+    <ImageView
+        android:id="@+id/ivTarget"
+        android:layout_width="20dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/target"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/nameInput"/>
 
     <Button
         android:id="@+id/spinButton"
@@ -36,6 +43,7 @@
         android:layout_below="@id/nameInput"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="600dp"/>
+
 
 
 
